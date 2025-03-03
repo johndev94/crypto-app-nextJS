@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+// import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Poppins } from "next/font/google";
+import { ThemeProvider } from "./theme-provider";
+
+// Define RootLayoutProps type
+type RootLayoutProps = {
+  children: React.ReactNode;
+};
+
 
 const poppins = Poppins({
   subsets:["latin"],
