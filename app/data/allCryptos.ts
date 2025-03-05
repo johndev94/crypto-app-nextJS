@@ -7,7 +7,6 @@ export function fetchAllCryptos() : Promise<unknown[]> {
 }
 
 const allCryptos = [
-    [
         {
           "id": "bitcoin",
           "symbol": "btc",
@@ -2868,5 +2867,4 @@ const allCryptos = [
           },
           "last_updated": "2025-03-04T23:59:18.311Z"
         }
-      ]
 ]
