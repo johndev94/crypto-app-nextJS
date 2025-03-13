@@ -4,6 +4,8 @@ import { useTheme } from "next-themes";
 import { Header } from "./Components/Header";
 import { useEffect, useState } from "react";
 import { PriceCards } from "./Components/price-cards";
+import { CoinComboBox } from "./Components/coin-combobox";
+import { CryptoChart } from "./Components/crypto-chart";
 
 export default function Home() {
   const { theme } = useTheme();
@@ -21,6 +23,8 @@ export default function Home() {
     >
       <Header />
       <PriceCards />
+      <CryptoChart />
+
     </div>
   );
 }
